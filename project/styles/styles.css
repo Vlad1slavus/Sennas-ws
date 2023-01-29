@@ -1,0 +1,395 @@
+* {
+    font-family: Oswald;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+html {
+    width: 100%;
+}
+ @font-face {
+    font-family: Oswald; 
+    src: url(../../fonts/Oswald-VariableFont_wght.ttf); 
+}
+header img {
+    width: 100px;
+    padding: 40px;
+}
+header {
+    background-color: rgb(226, 223, 57);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 1px 8px 8px 0px rgba(34, 60, 80, 0.2);
+    flex: 0 0 auto;
+}
+nav {
+    justify-content: space-around;
+    display: flex;
+    padding: 60px;
+    width: 700px;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(88, 143, 0);
+    font-size: 30px;
+    font-weight: 900;
+    transition: 0.2s ease-in-out;
+}
+nav a:hover {
+    color: rgb(132, 197, 79);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.58);
+}
+.drop-button {
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.drop-button svg {
+    width: 20px;
+    padding: 0px 5px;
+    transform: rotate(180deg);
+    fill: rgb(88, 143, 0);
+    transition: 0.2s ease-in;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.drop-content {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgb(224, 222, 58);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+.drop-content a:hover {
+    background-color: rgb(216, 202, 0);
+}
+.dropdown:hover .drop-content {
+    display: block;
+}
+.dropdown:hover .drop-button svg {
+    transform: rotate(0deg);
+}
+.wrapper {
+    margin: 0 auto;
+    padding: 125px 0px 125px 40px;
+    background-color: rgba(240, 240, 240, 0.514);
+    width: 1000px;
+    height: 100%;
+    flex: 1 0 auto;
+}
+.wrapper p {
+    font-size: 25px;
+    font-weight: 500;
+}
+h1 {
+    font-size: 45px;
+    color:rgb(62, 92, 38) ;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: block;
+    width: 450px;
+    height: 300px;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.2s ease-in;
+}
+.one, .two {
+    height: 290px;
+}
+.card h3 {
+    color: rgb(255, 255, 255);
+    padding: 0px 0px 0px 290px;
+    font-size: 40px;
+    position: absolute;
+}
+.card img {
+    width: 450px;
+    border-radius: 20px;
+    /* cursor: pointer; */
+}
+.card:hover {
+    /* filter: blur(1px); */
+    -webkit-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+    transform: scale(1.03);
+}
+.mark {
+    margin: 20px 0px 10px 38px;
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+    width: 90%;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-radius: 5px;
+}
+.mark img {
+    width: 200px;
+    padding: 10px 50px;
+}
+.mark h3 {
+    font-size: 35px;
+    color: rgb(89, 133, 19);;
+    padding: 30px 0px 10px 0px;
+}
+.mark p {
+    padding-bottom: 20px;
+}
+svg {
+    width: 30px;
+    vertical-align: -5px;
+}
+.cart {
+    text-decoration: none;
+    color: rgb(65, 105, 0);
+    display: block;
+    border: 3px solid rgb(65, 105, 0);
+    border-radius: 5px;
+    fill: rgb(65, 105, 0);
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    line-height: 20px;
+    padding: 10px 10px 10px 7px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin: 10px auto;
+    transition: 0.2s ease-in-out
+}
+.cart:hover {
+    background-color: rgb(88, 143, 0);
+    border: 3px solid rgb(88, 143, 0);
+    color: white;
+    fill: white;
+}
+footer {
+    flex: 0 0 auto;
+    background-color:  rgb(81, 168, 0);
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    text-align: end;
+    box-sizing: border-box;
+}
+footer a {
+    color: rgb(221, 221, 221);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+footer a:hover {
+    color: white;
+    font-weight: 800;
+}
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 900px;
+    }
+    .card {
+        width: 400px;
+        height: 250px;
+    }
+    .card h3 {
+        font-size: 30px;
+        padding: 0px 0px 0px 280px;
+    }
+    .card img {
+       width: 400px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .wrapper {
+        width: 700px;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 500px;
+        height: 350px;
+    }
+    .card h3 {
+        font-size: 50px;
+        padding: 0px 0px 0px 300px;
+    }
+    .card img {
+       width: 500px;
+    }
+    .one, .two {
+        height: 325px;
+    }
+}
+@media screen and (max-width: 860px) {
+    .wrapper {
+        padding: 180px 0px 50px 40px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        height: 150px;
+    }
+    header img {
+        padding: 0;
+    }
+    nav {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 770px) {
+    .wrapper {
+        padding: 180px 0px 50px 40px;
+        width: 550px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        height: 150px;
+    }
+    header img {
+        padding: 0;
+    }
+    nav {
+        padding: 0;
+    }
+    .mark {
+        margin-left: 10px;
+    }
+    .cards {
+        margin-left: -40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .wrapper {
+        padding: 240px 0px 50px 0px;
+        width: 426px;
+    }
+    .wrapper h1, .wrapper p {
+        padding: 0px 0px 0px 20px;
+    }
+    header {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0;
+        height: 220px;
+    }
+    header img {
+        padding: 0;
+    }
+    nav {
+        flex-wrap: wrap;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    nav a {
+        font-size: 30px;
+        padding: 5px 30px 0px 30px;
+    }
+    .cards {
+        margin-left: 0px;
+    }
+    .card {
+        width: 400px;
+        height: 300px;
+        margin: 20px 0px;
+    }
+    .card h3 {
+        font-size: 30px;
+        padding: 0px 0px 0px 280px;
+    }
+    .card img {
+        width: 400px;
+    }
+    .one, .two {
+        height: 260px;
+    }
+    .mark {
+        padding: 10px 0px 30px 0px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .mark p {
+        padding-left: 0px;
+    }
+    .mark img {
+        padding-top: 20px;
+    }
+    .mark h3 {
+        padding-top: 0px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .wrapper {
+        background-color: white;
+        width: 300px;
+    }
+    .card {
+        width: 300px;
+        height: 200px;
+    }
+    .card img {
+        width: 300px;
+    }
+    .card h3{
+        font-size: 20px;
+        padding: 0px 0px 0px 210px;
+    }
+    .one, .two {
+        height: 180px;
+    }
+    .mark h3 {
+        font-size: 20px;
+        padding: 0px 0px 20px 0px;
+    }
+    .mark p {
+        font-size: 16px;
+    }
+    .mark img {
+        width: 150px;
+    }
+    .product-one {
+        padding: 40px 0px 0px 0px;
+    }
+    .product-two {
+        padding: 0px 0px 20px 0px;
+    }
+    .mark h3 {
+        padding-bottom: 10px;
+    }
+}

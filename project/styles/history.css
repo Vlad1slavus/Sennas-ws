@@ -1,0 +1,159 @@
+.wrapper1 {
+    margin: 0 auto;
+    padding: 125px 40px 125px 40px;
+    background-color: rgba(240, 240, 240, 0.514);
+    width: 1000px;
+    height: 100%;
+    flex: 1 0 auto;
+}
+.wrapper1 h2 {
+    font-size: 90px;
+    padding-bottom: 15px;
+    color: rgb(88, 143, 0);
+    text-align: center;
+    border-top: 8px rgb(88, 143, 0) solid;
+    border-radius: 5px;
+}
+.wrapper1 h3 {
+    font-size: 50px;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.wrapper1 p {
+    line-height: 40px;
+    padding: 0px 60px;
+    font-size: 20px;
+}
+.biography img {
+    border-radius: 20px;
+    position: absolute;
+    left: 800px;
+    top: 450px;
+    margin: 30px auto;
+}
+.numbers {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-size: 1200px;
+    border-bottom: 5px black solid;
+    border-radius: 5px;
+    padding-bottom: 35px;
+}
+.numbers h3 {
+    width: 100%;
+    font-size: 70px;
+    color: rgb(93, 143, 12);
+    text-align: center;
+}
+.numbers p {
+    padding: 20px 20px;
+    font-size: 50px;
+    font-weight: 800;
+    color: rgb(88, 143, 0);
+}
+.numbers svg {
+    width: 40px;
+    fill: rgb(0, 0, 0);
+    align-self: center;
+}
+.numbers span {
+    color: rgb(226, 223, 57);
+}
+.achieve {
+    display: flex;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0);
+}
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(216, 216, 216, 0.404);
+    border-radius: 8px;
+    width: 100%;
+    gap: 20px;
+    /* border: rgba(107, 107, 107, 0.267) 3px solid; */
+    border: rgb(59, 161, 38) 3px solid;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0px auto 50px auto;
+}
+.photo-list img {
+    width: 200px;
+    border-radius: 5px;
+    flex: 1 1 0px;
+}
+.photo-list h6 {
+    font-size: 28px;
+    color: rgb(59, 161, 38);
+    flex-basis: 100%;
+    flex-grow: 0;
+    font-style: italic;
+    font-weight: 900;
+    padding-left: 20px;
+}
+.wrapper1 p {
+    padding-bottom: 40px;
+}
+.wrapper1 h3 {
+    border-top: 5px solid rgb(88, 143, 0);
+    margin-top: 75px;
+    color:rgb(88, 143, 0);
+}
+.memory a {
+    color: rgb(112, 182, 0);
+    text-decoration: none;
+    font-weight: 100;
+    transition: 0.2s ease-in-out;
+}
+.photos a {
+    font-size: 40px;
+    display: block;
+    color: rgb(112, 182, 0);
+    text-decoration: none;
+    font-weight: 100;
+    transition: 0.2s ease-in-out;
+    
+}
+.photos h6 a {
+    display: inline;
+    font-size: 28px;
+}
+.memory a:hover, .photos a:hover {
+    color: rgb(67, 109, 0);
+    font-weight: 900;
+}
+.photo-list h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    border: none;
+}
+.other a {
+    /* color: rgb(88, 143, 0); */
+    color: white;
+    display: block;
+    font-size: 40px;
+    text-decoration: none;
+    /* border: 5px solid rgb(231, 228, 22); */
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 25px;
+    text-align: center;
+    font-weight: 900;
+    width: 100%;
+    /* background-color: rgba(240, 237, 61, 0.925); */
+    background-color: rgb(88, 143, 0);
+    transition: 0.2s ease-in;
+}
+.other a:hover {
+    color: rgb(218, 255, 188);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.58);
+}
+.other {
+    margin-top: 75px;
+}
